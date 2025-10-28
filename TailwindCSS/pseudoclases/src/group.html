@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Pseudo Clases</title>
+</head>
+<body>
+    <section class="bg-purple-100 py-20 group/section-link:">
+        <h1 class="mb-6 text-center text-2xl font-extrabold">Aprende Tailwind</h1>
+        
+        <a href="#" class="flex bg-purple-800 w-max px-10 py-4 gap-2 rounded-xl mx-auto
+        hover:bg-purple-400
+        group/link">
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-6 fill-white
+            group-hover/link:fill-black">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 2v.51l-8 6.22-8-6.22V6zM4 18V9.04l7.39 5.74c.18.14.4.21.61.21s.43-.07.61-.21L20 9.03v8.96H4Z"></path>
+            </svg>
+            <span class="text-white font-semibold group-hover/link:text-black group-active/link:font-bold">Accede al curso</span>
+        </a>
+
+    </section>
+
+    <figure class="w-70 rounded-3xl mx-auto my-60 relative
+    overflow-hidden
+    group/figure">
+        <img src="./assets/cat.jpeg" class="rounded-[inherit]
+        group-hover/figure:scale-150">
+        <div class="absolute size-full bg-purple-900/70 rounded-[inherit] flex justify-center items-center top-0 translate-y-full
+        group-hover/figure:translate-y-0
+        transition-transform">
+
+            <h3 class="text-3xl font-bold text-white opacity-0
+                group-hover/figure:opacity-100
+                transition-transform">
+                Aprende Tailwind
+            </h3>
+        </div>
+    </figure>
+</body>
+</html>
