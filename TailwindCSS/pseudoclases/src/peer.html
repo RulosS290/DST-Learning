@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Peer Pseudoclases</title>
+</head>
+<body class="bg-zinc-300 flex h-screen items-center justify-center">
+    <form class="bg-white px-6 py-10 rounded-xl shadow-xl
+        flex flex-col items-start gap-3 w-100 relative">
+
+        <button class="mt-4 text-white bg-blue-600 w-full py-4 rounded-xl font-light
+        order-2 peer/btn">Continuar</button>
+
+        <input type="text" 
+        placeholder=" "
+        class="border-b border-zinc-800 px-4 py-2 w-full focus:border-blue-600 outline-none order-1
+        peer
+        ">
+
+        <label class="text-zinc-600
+        peer-focus:text-blue-600 
+        peer-focus:text-xs 
+        peer-focus:-translate-y-5
+
+        peer-not-placeholder-shown:text-blue-600
+        peer-not-placeholder-shown:text-xs 
+        peer-not-placeholder-shown:-translate-y-5
+        transition-all duration-75
+        absolute top-12 left-10 pointer-events-none">Ingresa tu nombre</label>
+    </form>
+</body>
+</html>
